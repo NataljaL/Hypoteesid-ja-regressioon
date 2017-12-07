@@ -24,7 +24,7 @@ Tere tulemast viimasele praktikumile! Alustame statistiliste hüpoteeside sõnas
 Milline järgnevatest väidetest on tõene?
 
 `@instructions`
-- Kui hüpoteesi $H\_1$ ei õnnestu tõestada, siis tõestab see automatselt hüpoteesi $H\_0$.
+- Kui hüpoteesi $H\_1$ tõestada ei õnnestu, siis tõestab see automatselt hüpoteesi $H\_0$.
 - Kui saame, et $p>\alpha$, siis tõestab see hüpoteesi $H\_1$.
 - Kui test-statistiku $T$ väärtus langeb kriitilisse piirkonda, mis on määratud täiendkvantiili abil, siis tõestab see hüpoteesi $H_0$.
 - Kui test-statistiku $T$ väärtus langeb kriitilisse piirkonda, mis on määratud täiendkvantiili abil, siis tõestab see hüpoteesi $H_1$.
