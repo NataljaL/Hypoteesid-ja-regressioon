@@ -111,8 +111,7 @@ polygon(c(min(x1),x1, max(x1), min(x2), x2, max(x2)),
       text(x = 0, y = 0.08, labels=paste0(100*(1-a*2),"%"), cex = 1.5)
 }
 
-Z <- -2.074799
-p <- 0.04
+
 ```
 
 `@sample_code`
