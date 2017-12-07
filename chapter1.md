@@ -69,19 +69,20 @@ Siin on $\bar{x}$ valimiandmete keskmine, $s$ on valimi standardhälve ja $\mu_0
 
 `@instructions`
 
-Create objects stra and n
-Set a null hypothesis that the expected value of strategic learning is 3 and create object mu0
-Compute the sample mean and the standard error
-Assume that $\sigma = s$ and compute the test statistic $z$. If mu0 is the actual expected value, then the random variable $Z$ corresponding to the value $z$ follows the standard normal distribution: $Z \sim N(0,1)$
-Print out the value of the test statistic
-Visualize the distribution.
+1. Muutuja `kt2` on juba loodud. See sisaldab 2. kontrolltöö tulemusi ühel eelneval aastal. Uuri neid. Omista muutujale `n` valimimahu (ehk vektori `kt2` elementide arvu).
+2. Null-hõpotees väidab, et kontrolltöö keskmine on 14 punkti: $H_0: \ \mu=14$. Omista muutujale $mu0$ väärtuse 14.
+3. Arvuta valimikeskmine ja standardhälve (muutujad vastavalt `x_kesk` ja `s`).
+4. Leia test-statistiku `Z` väärtus ülalpool toodud valemi abil. Millega võrdub?
+5. Käivita käsk `zplot(Z)`, et visualiseerida muutujale `Z` vastav jaotus `N(0, 1)` ja muutuja `Z` asukoht sellel graafikul.
+
 According to the picture and assuming that $Z \sim N(0,1)$, what is the probability that the test statistic $Z$ would take on a value even further away from it's expected value than the current value $z$? Save this probability to the object p.
 
 `@hint`
 
 `@pre_exercise_code`
 ```{r}
-learning2014 <- read.table("http://www.helsinki.fi/~kvehkala/JYTmooc/learning2014.txt", sep = "\t", header = TRUE)
+kt2 <- c(19.7, 19.2, 16.6, 16.5, 8.7, 7.9, 10.4, 18.5, 17.1, 19.3, 12.8, 13, 12.4, 18.5, 9.7, 12.6, 12.9)
+
 
 zplot <- function(critical) {
   critical <- round(critical, 2)
