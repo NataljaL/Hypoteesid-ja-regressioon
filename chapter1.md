@@ -1,6 +1,6 @@
 ---
-title       : Hüpoteeside kontroll ning seose modelleerimine regressiooni abil
-description : Selles viimases praktikumis õpime funktsioone hüpoteeside kontrollimiseks T testi abil. Seejärel tutvume võimalustega seose hindamiseks kahe tunnuse vahel ning selle modelleerimiseks regressiooni abil. 
+title       : Hüpoteeside kontroll
+description : Selles osas õpime võimalusi hüpoteeside kontrollimiseks.
 
 ---
 ## Statistilise hüpoteesi kontroll
