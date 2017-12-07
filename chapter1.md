@@ -112,6 +112,7 @@ polygon(c(min(x1),x1, max(x1), min(x2), x2, max(x2)),
 }
 
 Z <- -2.074799
+p <- 0.04
 ```
 
 `@sample_code`
