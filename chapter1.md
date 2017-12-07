@@ -3,17 +3,25 @@ title       : Hüpoteeside kontroll ning seose modelleerimine regressiooni abil
 description : Selles viimases praktikumis õpime funktsioone hüpoteeside kontrollimiseks T testi abil. Seejärel tutvume võimalustega seose hindamiseks kahe tunnuse vahel ning selle modelleerimiseks regressiooni abil. 
 
 ---
-## A really bad movie
+## Statistilise hüpoteesi kontroll
 
 ```yaml
 type: MultipleChoiceExercise
 lang: r
-xp: 50
+xp: 100
 skills: 1
 key: 7ba74f43f0
 ```
 
-Have a look at the plot that showed up in the viewer to the right. Which type of movie has the worst rating assigned to it?
+Tere tulemast viimasele praktikumile! Alustame statistiliste hüpoteeside sõnastamise ja kontrollimisega. Sõnastame hüpoteetilise väite ($H_1$) parameetri kohta ja soovime seda väidet tõestada valimiandmete põhjal. Üldiselt tuleks selle jaoks teostada järgmisi samme:
+
+* Sõnastada tõestamist vajav hüpotees ($H1$) ja selle täiend/vastand hüpotees ($H_0$). Tavaliselt vastab null-hüpotees $H_0$ nn tasakaalu olukorrale ehk sellele, mis on seni kogu aeg kehtinud.
+* Valida sobiv olulisuse nivoo, ehk vea tegemise tõenäosus $\alpha$. Loomulikult soovime, et see oleks väike. Üldiselt valitakse kas 0.01, 0.05 või 0.1.
+* Arvutada test-statistiku väärtus. Test-statistiku valem sõltub hüpoteesist. Praktikumis on jagatud valemilehti, milles saab leida vajalikud valemid.
+* Leida sobiva täiend-kvantiili väärtus või arvutada test-statistikule vastav olulisuse tõenäosus $p$.
+* Tõlgendada saadud tulemused ja teha otsus hüpoteeside kohta.
+
+Milline väide on tõene?
 
 `@instructions`
 - Adventure
