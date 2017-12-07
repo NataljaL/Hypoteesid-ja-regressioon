@@ -79,6 +79,9 @@ Siin on $\bar{x}$ valimiandmete keskmine, $s$ on valimi standardhälve ja $\mu_0
 Otsus hüpoteeside kohta on järgmine: kui $p < \alpha$, siis hüpotees $H_1$ on tõestatud. Kui võtta $\alpha=0.05$, siis millise otsuse saame?
 
 `@hint`
+* Olulisuse tõenäosuse $p$ leidmiseks tuleks vaadata diagrammil sabades olevaid pindalaid (nii vasakul kui ka paremal). Millega võrdub kogu sabades olev pindala?
+* Tähtis on meeles pidada, et $p$ on tõenäosus, järelikult on selle väärtuste piirkond on 0-st 1-ni.
+* $|Z|$ on juhusliku suuruse $Z$ absoluutväärtus, st et $P(|Z| > z) = P(Z < -z) + P(Z > z)$.
 
 `@pre_exercise_code`
 ```{r}
@@ -161,5 +164,19 @@ p <- 0.04
 
 `@sct`
 ```{r}
+# submission correctness tests
 
+test_object("x_kesk", undefined_msg = "Loo muutuja `x_kesk`, mis vastab valimi keskmisele.",
+            incorrect_msg = "Väärtus on vale. Kas kasutasid funktsioon `mean()`?")
+test_object("s", undefined_msg = "Loo muutuja `s`, mis vastab valimi standardhälbele.",
+            incorrect_msg = "Väärtus on vale. Kas kasutasid funktsioon `sd()`?")
+test_object("Z", undefined_msg = "Loo muutuja `Z`, mis vastab test-statistikule.",
+            incorrect_msg = "Väärtus on vale. Vaata valemit selgituses.")
+test_object("p", undefined_msg = "Loo muutuja `p`, mis vastab olulisuse tõenäosusele. Selle väärtus on leitav diagrammil",
+            incorrect_msg = "Väärtus on vale. Proovi uuesti.")
+
+test_error()
+
+# Final message the student will see upon completing the exercise
+success_msg("Suurepärane töö! Kui võtta vea tegemise tõenäosuseks 0.05, siis saadud $p=0.04$ väärtuse korral langeb test-statistik kriitilisse piirkonda ja hüpotees $H_1: \ \mu\neq 15.5$ on tõestatud!")
 ```
