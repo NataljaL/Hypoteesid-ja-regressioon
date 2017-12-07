@@ -18,7 +18,7 @@ Tere tulemast viimasele praktikumile! Alustame statistiliste hüpoteeside sõnas
 * Sõnastada tõestamist vajav hüpotees ($H\_1$) ja selle täiend/vastand hüpotees ($H\_0$). Tavaliselt vastab null-hüpotees $H\_0$ nn tasakaalu olukorrale ehk sellele, mis on seni kogu aeg kehtinud.
 * Valida sobiv olulisuse nivoo, ehk vea tegemise tõenäosus $\alpha$. Loomulikult soovime, et see oleks väike. Üldiselt valitakse kas 0.01, 0.05 või 0.1.
 * Arvutada test-statistiku väärtuse. Test-statistiku valem sõltub hüpoteesist. Praktikumis on jagatud valemilehti, milles saab vajalikud valemid leida.
-* Leida sobiva täiend-kvantiili väärtus või arvutada test-statistikule vastav olulisuse tõenäosus $p$.
+* Leida sobiva täiend-kvantiili väärtuse või arvutada test-statistikule vastav olulisuse tõenäosus $p$.
 * Tõlgendada saadud tulemused ja teha otsus hüpoteeside kohta.
 
 Milline väide on tõene?
