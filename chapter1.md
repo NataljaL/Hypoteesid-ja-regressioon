@@ -50,3 +50,47 @@ test_mc(correct = 4, feedback_msgs = c(msg1, msg2, msg3, msg4))
 success_msg("Õige! Test-staistiku sattumine kriitilisse piirkonda näitab seda, et eeldatud null-hüpotees siin kehtida ei saa ja see omakorda tõestab hüpoteesi $H_1$.")
 ```
 
+
+---
+## Test-statistik
+
+```yaml
+type: NormalExercise
+key: 7ca0756cea
+lang: r
+xp: 100
+skills: 1
+```
+After setting the hypotheses, we can use the data we have and calculate a test statistic, which is a statistical summary of the data. What kind of test statistic to use, depends on the situation.
+
+A $z$ test statistic is computed by standardizing a normal random variable (here $\bar{x}$).
+
+$$z = \frac{\bar{x} - \mu_0}{\sigma / \sqrt{n}}$$
+
+where $\mu_0$ is the hypothesized expected value of $\bar{x}$, $\sigma$ is the population standard deviation and $n$ is the sample size. A $z$ test has limited practical use (because it assumes that the population standard deviation is known) but it demonstrates the idea of a test statistic well enough. The widely used t-test is very similar.
+
+Notice that if $\sigma$ is replaced by it's estimate $s$, then the denominator has the standard error of $\bar{x}$.
+
+`@instructions`
+
+`@hint`
+
+`@pre_exercise_code`
+```{r}
+
+```
+
+`@sample_code`
+```{r}
+
+```
+
+`@solution`
+```{r}
+
+```
+
+`@sct`
+```{r}
+
+```
