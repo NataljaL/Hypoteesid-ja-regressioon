@@ -42,12 +42,12 @@ Lihtsalt proovi erinevaid variante läbi ja saad vastava tagasiside.
 msg1 <- "See on sagedane valetõlgendus. Testid on konstrueeritud nii, et hüpoteesi $H_0$ ei saa kunagi tõestada. Juhul, kui hüpoteesi $H_1$ tõestada ei õnnestu, siis sel juhul me jääme $H_0$ juurde (ehk jääme null seisu juurde). See automaatselt ei tähenda, et $H_0$ on tõene. Võimalik, et meil oli liiga vähe andmeid $H_1$ tõestamiseks."
 msg2 <- "Ei ole õige! Kui saame, et $p > \\alpha$, siis järelikult test-statistiku väärtus kriitilisse piirkonda ei sattunud. Selletõttu jääme $H_0$ juurde."
 msg3 <- "Ei ole õige! Test-staistiku sattumine kriitilisse piirkonda tõestab hoopis hüpoteesi $H_1$."
-msg4 <- "Õige! Test-staistiku sattumine kriitilisse piirkonda näitab seda, et eeldatud null-hüpotees siin kehtida ei saa ja see omakorda tõestab hüpoteesi $H_1$."
+msg4 <- "Õige!"
 
 test_mc(correct = 4, feedback_msgs = c(msg1, msg2, msg3, msg4))
 
 # Final message the student will see upon completing the exercise
-success_msg("Tubli töö!")
+success_msg("Õige! Test-staistiku sattumine kriitilisse piirkonda näitab seda, et eeldatud null-hüpotees siin kehtida ei saa ja see omakorda tõestab hüpoteesi $H_1$.")
 ```
 
 ---
