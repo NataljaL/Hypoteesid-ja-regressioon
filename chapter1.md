@@ -70,7 +70,7 @@ Siin on $\bar{x}$ valimiandmete keskmine, $s$ on valimi standardhälve ja $\mu_0
 `@instructions`
 
 1. Muutuja `kt2` on juba loodud. See sisaldab 2. kontrolltöö tulemusi ühel eelneval aastal. Uuri neid. Omista muutujale `n` valimimahu (ehk vektori `kt2` elementide arvu).
-2. Null-hõpotees väidab, et kontrolltöö keskmine on 14 punkti: $H_0: \ \mu=14$. Sisukas hüpotees aga $H\_1: \mu\neq 14$. Omista muutujale `mu0` väärtuse 14.
+2. Null-hõpotees väidab, et kontrolltöö keskmine on 15.5 punkti: $H_0: \ \mu=15.5$. Sisukas hüpotees aga $H\_1: \mu\neq 15.5$. Omista muutujale `mu0` väärtuse 15.5.
 3. Arvuta valimikeskmine ja standardhälve (muutujad vastavalt `x_kesk` ja `s`).
 4. Leia test-statistiku `Z` väärtus ülalpool toodud valemi abil. Millega võrdub?
 5. Käivita käsk `zplot(Z)`, et visualiseerida muutujale `Z` vastav jaotus `N(0, 1)` ja muutuja `Z` asukoht sellel graafikul.
@@ -113,10 +113,10 @@ polygon(c(min(x1),x1, max(x1), min(x2), x2, max(x2)),
 ```{r}
 # 1. Vaata muutja kt2 väärtuseid ja leia valimimaht:
 kt2
-n <- _____________
+n <- 
 
-# 2. H0: mu = 14. Omista mu0 väärtus:
-mu0 <- ___________
+# 2. H0: mu = 15.5. Omista mu0 väärtus:
+mu0 <- 
 
 # 3. Leia valimikeskmine ja standardhölve:
 x_kesk <- 
@@ -136,6 +136,26 @@ p <-
 
 `@solution`
 ```{r}
+# 1. Vaata muutja kt2 väärtuseid ja leia valimimaht:
+kt2
+n <- length(kt2)
+
+# 2. H0: mu = 15.5. Omista mu0 väärtus:
+mu0 <- 15.5
+
+# 3. Leia valimikeskmine ja standardhölve:
+x_kesk <- mean(kt2)
+s <- sd(kt2)
+
+# 4. Leia test-statistiku väärtus ja väljasta:
+Z <- (x_kesk - mu0) / (s/sqrt(n))
+Z
+
+# 5. Käivita käsk ja uuri saadud disagrammi:
+zplot(Z)
+
+# 6. Millega võrdub p=P(|Z| > z)? Vastus on leitav diagrammil!
+p <- 0.04
 
 ```
 
