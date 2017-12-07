@@ -61,15 +61,11 @@ lang: r
 xp: 100
 skills: 1
 ```
-After setting the hypotheses, we can use the data we have and calculate a test statistic, which is a statistical summary of the data. What kind of test statistic to use, depends on the situation.
+Kui huvipakkuv sisukas hüpotees on sõnastatud, saame kasutada olemasolevaid valimiandmeid, et väljaarvutada test-statistiku väärtuse. Millist test-statistikut kasutada, sõltub situatsioonist. Vaatame siin suure valimi olukorda (valimimaht on vähemalt 60), siis saame kasutada test-statistikut $Z$, mille jaotus on ligikaudu $N(0,\ 1)$ (põhjalikum ülevaade on antud loengul):
 
-A $z$ test statistic is computed by standardizing a normal random variable (here $\bar{x}$).
+$$Z = \frac{\bar{x} - \mu_0}{s / \sqrt{n}}.$$
 
-$$z = \frac{\bar{x} - \mu_0}{\sigma / \sqrt{n}}$$
-
-where $\mu_0$ is the hypothesized expected value of $\bar{x}$, $\sigma$ is the population standard deviation and $n$ is the sample size. A $z$ test has limited practical use (because it assumes that the population standard deviation is known) but it demonstrates the idea of a test statistic well enough. The widely used t-test is very similar.
-
-Notice that if $\sigma$ is replaced by it's estimate $s$, then the denominator has the standard error of $\bar{x}$.
+Siin on $\bar{x}$ valimiandmete keskmine, $s$ on valimi standardhälve ja $\mu_0$ on konstant, millega soovitakse üldkogumi keskväärtust võrrelda sisuka hüpoteesi väites.
 
 `@instructions`
 
