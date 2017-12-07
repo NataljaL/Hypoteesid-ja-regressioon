@@ -61,7 +61,7 @@ lang: r
 xp: 100
 skills: 1
 ```
-Kui huvipakkuv sisukas hüpotees on sõnastatud, saame kasutada olemasolevaid valimiandmeid, et väljaarvutada test-statistiku väärtuse. Millist test-statistikut kasutada, sõltub situatsioonist. Vaatame siin **suure valimi olukorda** (valimimaht on vähemalt 60), siis saame kasutada test-statistikut $Z$, mille jaotus on ligikaudu $N(0,\ 1)$ (põhjalikum ülevaade on antud loengul):
+Kui huvipakkuv sisukas hüpotees on sõnastatud, saame kasutada valimiandmeid, et väljaarvutada test-statistiku väärtuse. Millist test-statistikut kasutada, sõltub situatsioonist. Vaatame siin **suure valimi olukorda** (valimimaht on vähemalt 60), siis saame kasutada test-statistikut $Z$, mille jaotus on ligikaudu $N(0,\ 1)$ (põhjalikum ülevaade on antud loengul):
 
 $$Z = \frac{\bar{x} - \mu_0}{s / \sqrt{n}}.$$
 
@@ -69,15 +69,70 @@ Siin on $\bar{x}$ valimiandmete keskmine, $s$ on valimi standardhälve ja $\mu_0
 
 `@instructions`
 
+Create objects stra and n
+Set a null hypothesis that the expected value of strategic learning is 3 and create object mu0
+Compute the sample mean and the standard error
+Assume that $\sigma = s$ and compute the test statistic $z$. If mu0 is the actual expected value, then the random variable $Z$ corresponding to the value $z$ follows the standard normal distribution: $Z \sim N(0,1)$
+Print out the value of the test statistic
+Visualize the distribution.
+According to the picture and assuming that $Z \sim N(0,1)$, what is the probability that the test statistic $Z$ would take on a value even further away from it's expected value than the current value $z$? Save this probability to the object p.
+
 `@hint`
 
 `@pre_exercise_code`
 ```{r}
+learning2014 <- read.table("http://www.helsinki.fi/~kvehkala/JYTmooc/learning2014.txt", sep = "\t", header = TRUE)
 
+zplot <- function(critical) {
+  critical <- round(critical, 2)
+  z <- c(-critical, critical)
+  par(mar = c(7,4,5,4))
+  x <- (-40:40)/10
+  y <- dnorm(x)
+  main = paste("The N(0, 1) distribution \n z = ",critical)
+  plot(x, y, type = "l", xaxt = "n", ylab = "n", main = main)
+  axis(1, at = c(-3,  0,  3))
+  axis(1, at = round(z, 2) , col.ticks = "red", las = 2)
+  
+  # highlight critical regions, add matching percentages
+  x1 <- x[x<=min(z)]; x2 <- x[x>=max(z)]
+  a <- round(pnorm(min(z)),2)
+  
+polygon(c(min(x1),x1, max(x1), min(x2), x2, max(x2)),
+            c(0, dnorm(x1),0, 0, dnorm(x2), 0), col = "grey60")
+      text(x = c(-3.5, 3.5), y = c(0.08,0.08), labels = paste0(a*100,"%"), cex = 1.5)
+      text(x = 0, y = 0.08, labels=paste0(100*(1-a*2),"%"), cex = 1.5)
+}
 ```
 
 `@sample_code`
 ```{r}
+# learning2014 is available
+
+# Strategic learning scores and number of observations
+stra <- learning2014$stra
+n <- length(stra)
+
+# H0: mu = 3
+mu0 <- 3
+
+# Sample mean of strategic learning
+x_bar <- 
+
+# Standard error of the sample mean
+error <-
+
+# The test statistic
+z <- (x_bar - mu0) / error
+
+# Print out the value of the test statistic
+
+
+# Visualize the N(0, 1) distribution and the value of z 
+zplot(z)
+
+# P(|Z| > z)
+p <- 
 
 ```
 
