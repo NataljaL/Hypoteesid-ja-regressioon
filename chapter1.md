@@ -70,12 +70,13 @@ Siin on $\bar{x}$ valimiandmete keskmine, $s$ on valimi standardhälve ja $\mu_0
 `@instructions`
 
 1. Muutuja `kt2` on juba loodud. See sisaldab 2. kontrolltöö tulemusi ühel eelneval aastal. Uuri neid. Omista muutujale `n` valimimahu (ehk vektori `kt2` elementide arvu).
-2. Null-hõpotees väidab, et kontrolltöö keskmine on 14 punkti: $H_0: \ \mu=14$. Omista muutujale $mu0$ väärtuse 14.
+2. Null-hõpotees väidab, et kontrolltöö keskmine on 14 punkti: $H_0: \ \mu=14$. Sisukas hüpotees aga $H\_1: \mu\neq 14$. Omista muutujale $mu0$ väärtuse 14.
 3. Arvuta valimikeskmine ja standardhälve (muutujad vastavalt `x_kesk` ja `s`).
 4. Leia test-statistiku `Z` väärtus ülalpool toodud valemi abil. Millega võrdub?
 5. Käivita käsk `zplot(Z)`, et visualiseerida muutujale `Z` vastav jaotus `N(0, 1)` ja muutuja `Z` asukoht sellel graafikul.
+6. Millega võrdub diagrammi järgi test-statistikule vastav olulisuse tõenäosus $p$? Tuleta meelde, et kahepoolse hüpoteesi kontrollimisel on $p=P(|Z| > z)$, kus $z$ valimi põhjal arvutatud test-statistiku $Z$ väärtus. Omista leitud tõenäosus muutujale `p`.
 
-According to the picture and assuming that $Z \sim N(0,1)$, what is the probability that the test statistic $Z$ would take on a value even further away from it's expected value than the current value $z$? Save this probability to the object p.
+
 
 `@hint`
 
@@ -110,31 +111,25 @@ polygon(c(min(x1),x1, max(x1), min(x2), x2, max(x2)),
 
 `@sample_code`
 ```{r}
-# learning2014 is available
+# 1. Vaata muutja kt2 väärtuseid ja leia valimimaht:
+kt2
+n <- _____________
 
-# Strategic learning scores and number of observations
-stra <- learning2014$stra
-n <- length(stra)
+# 2. H0: mu = 14. Omista mu0 väärtus:
+mu0 <- ___________
 
-# H0: mu = 3
-mu0 <- 3
+# 3. Leia valimikeskmine ja standardhölve:
+x_kesk <- 
+s <- 
 
-# Sample mean of strategic learning
-x_bar <- 
+# 4. Leia test-statistiku väärtus ja väljasta:
+Z <- 
+Z
 
-# Standard error of the sample mean
-error <-
+# 5. Käivita käsk ja uuri saadud disagrammi:
+zplot(Z)
 
-# The test statistic
-z <- (x_bar - mu0) / error
-
-# Print out the value of the test statistic
-
-
-# Visualize the N(0, 1) distribution and the value of z 
-zplot(z)
-
-# P(|Z| > z)
+# 6. Millega võrdub p=P(|Z| > z)? Vastus on leitav diagrammil!
 p <- 
 
 ```
