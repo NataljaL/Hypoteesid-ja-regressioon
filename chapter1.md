@@ -70,7 +70,7 @@ Siin on $\bar{x}$ valimiandmete keskmine, $s$ on valimi standardhälve ja $\mu_0
 `@instructions`
 
 1. Muutuja `kt2` on juba loodud. See sisaldab 2. kontrolltöö tulemusi ühel eelneval aastal. Uuri neid. Omista muutujale `n` valimimahu (ehk vektori `kt2` elementide arvu).
-2. Null-hõpotees väidab, et kontrolltöö keskmine on 14 punkti: $H_0: \ \mu=14$. Sisukas hüpotees aga $H\_1: \mu\neq 14$. Omista muutujale $mu0$ väärtuse 14.
+2. Null-hõpotees väidab, et kontrolltöö keskmine on 14 punkti: $H_0: \ \mu=14$. Sisukas hüpotees aga $H\_1: \mu\neq 14$. Omista muutujale `mu0` väärtuse 14.
 3. Arvuta valimikeskmine ja standardhälve (muutujad vastavalt `x_kesk` ja `s`).
 4. Leia test-statistiku `Z` väärtus ülalpool toodud valemi abil. Millega võrdub?
 5. Käivita käsk `zplot(Z)`, et visualiseerida muutujale `Z` vastav jaotus `N(0, 1)` ja muutuja `Z` asukoht sellel graafikul.
