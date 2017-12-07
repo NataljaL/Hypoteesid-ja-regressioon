@@ -76,7 +76,7 @@ Siin on $\bar{x}$ valimiandmete keskmine, $s$ on valimi standardhälve ja $\mu_0
 5. Käivita käsk `zplot(Z)`, et visualiseerida muutujale `Z` vastav jaotus `N(0, 1)` ja muutuja `Z` asukoht sellel graafikul.
 6. Millega võrdub diagrammi järgi test-statistikule vastav olulisuse tõenäosus $p$? Tuleta meelde, et kahepoolse hüpoteesi kontrollimisel on $p=P(|Z| > z)$, kus $z$ valimi põhjal arvutatud test-statistiku $Z$ väärtus. Omista leitud tõenäosus muutujale `p`.
 
-
+Otsus hüpoteeside kohta on järgmine: kui $p < \alpha$, siis hüpotees $H_1$ on tõestatud. Kui võtta $\alpha=0.05$, siis millise otsuse saame?
 
 `@hint`
 
