@@ -25,32 +25,29 @@ Milline väide on tõene?
 
 `@instructions`
 - Kui hüpoteesi $H\_1$ ei õnnestu tõestada, siis tõestab see automatselt hüpoteesi $H\_0$.
-- Kui saame, et $p>\alpha$, siis oleme tõestanud hüpoteesi $H\_1$.
+- Kui saame, et $p>\alpha$, siis tõestab see hüpoteesi $H\_1$.
 - Kui test-statistiku $T$ väärtus langeb kriitilisse piirkonda, mis on määratud täiendkvantiili abil, siis tõestab see hüpoteesi $H_0$.
 - Kui test-statistiku $T$ väärtus langeb kriitilisse piirkonda, mis on määratud täiendkvantiili abil, siis tõestab see hüpoteesi $H_1$.
 
 `@hint`
-Have a look at the plot. Which color does the point with the lowest rating have?
+Lihtsalt proovi erinevaid variante läbi ja saad vastava tagasiside.
 
 `@pre_exercise_code`
 ```{r}
-# The pre exercise code runs code to initialize the user's workspace.
-# You can use it to load packages, initialize datasets and draw a plot in the viewer
-
-movies <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv")
-
-library(ggplot2)
-
-ggplot(movies, aes(x = runtime, y = rating, col = genre)) + geom_point()
+# puudub
 ```
 
 `@sct`
 ```{r}
-# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
+msg1 <- "This is a common misinterpretation. A p-value is a statement about data in relation to a specified hypothetical explanation, and is not a statement about the explanation itself."
+msg2 <- "This is a common misinterpretation. Any effect, no matter how tiny, can produce a significant p-value if the sample size or measurement precision is high enough. Also large effects may produce unsignificant p-values if the sample size is small or measurements are imprecise."
+msg3 <- "A significant p-value has absolutely no value if the experiment it poorly designed and/or reported. Whenever a researcher chooses what to present based on statistical results, valid interpretation of those results is severely compromised if the reader is not informed of the choice and its basis."
+msg4 <- "Correct! A p-value provides one approach to summarizing the incompatibility between a particular set of data and a proposed model or hypothesis relating that data."
 
-msg_bad <- "That is not correct!"
-msg_success <- "Exactly! There seems to be a very bad action movie in the dataset."
-test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
+test_mc(correct = 4, feedback_msgs = c(msg1, msg2, msg3, msg4))
+
+# Final message the student will see upon completing the exercise
+success_msg("Good work!")
 ```
 
 ---
