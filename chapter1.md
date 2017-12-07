@@ -24,10 +24,10 @@ Tere tulemast viimasele praktikumile! Alustame statistiliste hüpoteeside sõnas
 Milline väide on tõene?
 
 `@instructions`
-- Adventure
-- Action
-- Animation
-- Comedy
+- Kui hüpoteesi $H\_1$ ei õnnestu tõestada, siis tõestab see automatselt hüpoteesi $H\_0$.
+- Kui saame, et $p>\alpha$, siis oleme tõestanud hüpoteesi $H\_1$.
+- Kui test-statistiku $T$ väärtus langeb kriitilisse piirkonda, mis on määratud täiendkvantiili abil, siis tõestab see hüpoteesi $H_0$.
+- Kui test-statistiku $T$ väärtus langeb kriitilisse piirkonda, mis on määratud täiendkvantiili abil, siis tõestab see hüpoteesi $H_1$.
 
 `@hint`
 Have a look at the plot. Which color does the point with the lowest rating have?
