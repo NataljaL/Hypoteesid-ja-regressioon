@@ -39,15 +39,15 @@ Lihtsalt proovi erinevaid variante läbi ja saad vastava tagasiside.
 
 `@sct`
 ```{r}
-msg1 <- "This is a common misinterpretation. A p-value is a statement about data in relation to a specified hypothetical explanation, and is not a statement about the explanation itself."
-msg2 <- "This is a common misinterpretation. Any effect, no matter how tiny, can produce a significant p-value if the sample size or measurement precision is high enough. Also large effects may produce unsignificant p-values if the sample size is small or measurements are imprecise."
-msg3 <- "A significant p-value has absolutely no value if the experiment it poorly designed and/or reported. Whenever a researcher chooses what to present based on statistical results, valid interpretation of those results is severely compromised if the reader is not informed of the choice and its basis."
-msg4 <- "Correct! A p-value provides one approach to summarizing the incompatibility between a particular set of data and a proposed model or hypothesis relating that data."
+msg1 <- "See on sagedane valetõlgendus. Testid on konstrueeritud nii, et hüpoteesi $H_0$ ei saa kunagi tõestada. Juhul, kui ei hüpoteesi $H_1$ tõestada ei õnnestu, siis sel juhul me jääme $H_0$ juurde (ehk jääme null seisu juurde). See automaatselt ei tähenda et $H_0$ on tõene. Võimalik, et meil oli liiga vähe andmeid $H_1$ tõestamiseks."
+msg2 <- "Kui saame, et $p>\alpha$, siis järelikult test-statistiku väärtus kriitilisse piirkonda ei sattunud. Selletõttu jääme $H_0$ juurde."
+msg3 <- "Test-staistiku sattumine kriitilisse piirkonda tõestab hüpoteesi $H_1$."
+msg4 <- "Õige! Test-staistiku sattumine kriitilisse piirkonda näitab seda, et eeldatud null-hüpotees siin kehtida ei saa ja see omakorda tõestab hüpoteesi $H_1$."
 
 test_mc(correct = 4, feedback_msgs = c(msg1, msg2, msg3, msg4))
 
 # Final message the student will see upon completing the exercise
-success_msg("Good work!")
+success_msg("Tubli töö!")
 ```
 
 ---
