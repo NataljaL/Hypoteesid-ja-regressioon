@@ -21,7 +21,7 @@ Tere tulemast viimasele praktikumile! Alustame statistiliste hüpoteeside sõnas
 * Leida sobiva täiend-kvantiili väärtuse või arvutada test-statistikule vastav olulisuse tõenäosus $p$.
 * Tõlgendada saadud tulemused ja teha otsus hüpoteeside kohta.
 
-Milline väide on tõene?
+Milline järgnevatest väidetest on tõene?
 
 `@instructions`
 - Kui hüpoteesi $H\_1$ ei õnnestu tõestada, siis tõestab see automatselt hüpoteesi $H\_0$.
