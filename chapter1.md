@@ -15,11 +15,11 @@ key: 7ba74f43f0
 
 Tere tulemast viimasele praktikumile! Alustame statistiliste hüpoteeside sõnastamise ja kontrollimisega. Sõnastame hüpoteetilise väite ($H_1$) parameetri kohta ja soovime seda väidet tõestada valimiandmete põhjal. Üldiselt tuleks selle jaoks teostada järgmisi samme:
 
-* Sõnastada tõestamist vajav hüpotees ($H\_1$) ja selle täiend/vastand hüpotees ($H\_0$). Tavaliselt vastab null-hüpotees $H\_0$ nn tasakaalu olukorrale ehk sellele, mis on seni kogu aeg kehtinud.
-* Valida sobiv olulisuse nivoo, ehk vea tegemise tõenäosus $\alpha$. Loomulikult soovime, et see oleks väike. Üldiselt valitakse kas 0.01, 0.05 või 0.1.
-* Arvutada test-statistiku väärtuse. Test-statistiku valem sõltub hüpoteesist. Praktikumis on jagatud valemilehti, milles saab vajalikud valemid leida.
-* Leida sobiva täiend-kvantiili väärtuse või arvutada test-statistikule vastav olulisuse tõenäosus $p$.
-* Tõlgendada saadud tulemused ja teha otsus hüpoteeside kohta.
+* Sõnastada tõestamist vajav *sisukas hüpotees* ($H\_1$) ja selle täiend/vastand *null-hüpotees* ($H\_0$). Tavaliselt vastab null-hüpotees $H\_0$ nn tasakaalu olukorrale ehk sellele, mis on seni kogu aeg kehtinud.
+* Valida sobiv *olulisuse nivoo*, ehk vea tegemise tõenäosus $\alpha$. Loomulikult soovime, et see oleks väike. Üldiselt valitakse kas 0.01, 0.05 või 0.1.
+* Arvutada *test-statistiku* väärtuse. Test-statistiku valem sõltub hüpoteesist. Praktikumis on jagatud valemilehti, milles saab vajalikud valemid leida.
+* Leida sobiva *täiendkvantiili* väärtuse või arvutada test-statistikule vastav olulisuse tõenäosus $p$.
+* Tõlgendada saadud tulemused ja teha *otsus* hüpoteeside kohta.
 
 Milline järgnevatest väidetest on tõene?
 
@@ -39,7 +39,7 @@ Lihtsalt proovi erinevaid variante läbi ja saad vastava tagasiside.
 
 `@sct`
 ```{r}
-msg1 <- "See on sagedane valetõlgendus. Testid on konstrueeritud nii, et hüpoteesi $H_0$ ei saa kunagi tõestada. Juhul, kui hüpoteesi $H_1$ tõestada ei õnnestu, siis sel juhul me jääme $H_0$ juurde (ehk jääme null seisu juurde). See automaatselt ei tähenda et $H_0$ on tõene. Võimalik, et meil oli liiga vähe andmeid $H_1$ tõestamiseks."
+msg1 <- "See on sagedane valetõlgendus. Testid on konstrueeritud nii, et hüpoteesi $H_0$ ei saa kunagi tõestada. Juhul, kui hüpoteesi $H_1$ tõestada ei õnnestu, siis sel juhul me jääme $H_0$ juurde (ehk jääme null seisu juurde). See automaatselt ei tähenda, et $H_0$ on tõene. Võimalik, et meil oli liiga vähe andmeid $H_1$ tõestamiseks."
 msg2 <- "Kui saame, et $p>\alpha$, siis järelikult test-statistiku väärtus kriitilisse piirkonda ei sattunud. Selletõttu jääme $H_0$ juurde."
 msg3 <- "Test-staistiku sattumine kriitilisse piirkonda tõestab hüpoteesi $H_1$."
 msg4 <- "Õige! Test-staistiku sattumine kriitilisse piirkonda näitab seda, et eeldatud null-hüpotees siin kehtida ei saa ja see omakorda tõestab hüpoteesi $H_1$."
