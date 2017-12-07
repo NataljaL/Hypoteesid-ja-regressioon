@@ -166,6 +166,8 @@ p <- 0.04
 ```{r}
 # submission correctness tests
 
+test_object("n", undefined_msg = "Loo muutuja `n`, mis vastab valimimahule.",
+            incorrect_msg = "Väärtus on vale. Kas kasutasid funktsioon `length()`?")
 test_object("x_kesk", undefined_msg = "Loo muutuja `x_kesk`, mis vastab valimi keskmisele.",
             incorrect_msg = "Väärtus on vale. Kas kasutasid funktsioon `mean()`?")
 test_object("s", undefined_msg = "Loo muutuja `s`, mis vastab valimi standardhälbele.",
