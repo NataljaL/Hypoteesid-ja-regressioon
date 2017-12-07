@@ -61,7 +61,7 @@ lang: r
 xp: 100
 skills: 1
 ```
-Kui huvipakkuv sisukas hüpotees on sõnastatud, saame kasutada olemasolevaid valimiandmeid, et väljaarvutada test-statistiku väärtuse. Millist test-statistikut kasutada, sõltub situatsioonist. Vaatame siin suure valimi olukorda (valimimaht on vähemalt 60), siis saame kasutada test-statistikut $Z$, mille jaotus on ligikaudu $N(0,\ 1)$ (põhjalikum ülevaade on antud loengul):
+Kui huvipakkuv sisukas hüpotees on sõnastatud, saame kasutada olemasolevaid valimiandmeid, et väljaarvutada test-statistiku väärtuse. Millist test-statistikut kasutada, sõltub situatsioonist. Vaatame siin **suure valimi olukorda** (valimimaht on vähemalt 60), siis saame kasutada test-statistikut $Z$, mille jaotus on ligikaudu $N(0,\ 1)$ (põhjalikum ülevaade on antud loengul):
 
 $$Z = \frac{\bar{x} - \mu_0}{s / \sqrt{n}}.$$
 
